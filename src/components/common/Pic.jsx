@@ -19,3 +19,5 @@ export default function Pic({ src, className, shadow = false, style }) {
 			{shadow && <img style={shadowStyle} src={src} alt={src} />}
 			<img style={picStyle} src={src} alt={src} />
 		</div>
+	);
+}
