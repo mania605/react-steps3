@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{{ member.username }}'s Details
+{% endblock %}
+
+{% block content %}
+<h1>{{ member.username }}</h1>
+
+<ul>
+  <li>Age: {{ member.age }}</li>
+  <li>Joined Date: {{ member.date }}</li>
+</ul>
+
+<a href="/members">Back to Members Page</a>
+{% endblock %}
